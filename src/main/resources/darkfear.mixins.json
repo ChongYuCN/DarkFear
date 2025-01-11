@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.chongyu.darkfear.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "DamageSourcesMixin",
+    "DamageTrackerMixin",
+    "PlayerEntityMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

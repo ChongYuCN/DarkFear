@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "darkfear",
+  "version": "${version}",
+
+  "name": "DarkFear",
+  "description": "When you are in a dark environment, you will be afraid and hurt",
+  "authors": [
+    "ChongYu"
+  ],
+  "contact": {
+    "repo": "https://github.com/16348/DarkFear"
+  },
+
+  "license": "All-Rights-Reserved",
+  "icon": "assets/darkfear/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.chongyu.darkfear.client.DarkFearClient"
+    ],
+    "main": [
+      "com.chongyu.darkfear.DarkFear"
+    ]
+  },
+
+          "mixins": [
+        "darkfear.mixins.json"
+      ],
+
+  "depends": {
+    "fabricloader": ">=0.14.21",
+              "fabric": "*",
+          "minecraft": ">=1.20.1"
+  }
+}
