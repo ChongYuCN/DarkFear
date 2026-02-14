@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "darkfear",
+  "version": "${version}",
+  "name": "DarkFear",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "BSD-3-Clause",
+  "icon": "assets/darkfear/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "com.github.chongyucn.darkfear.client.DarkfearDataGenerator"
+    ],
+    "client": [
+      "com.github.chongyucn.darkfear.client.DarkFearClient"
+    ],
+    "main": [
+      "com.github.chongyucn.darkfear.DarkFear"
+    ]
+  },
+  "mixins": [
+    "darkfear.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
